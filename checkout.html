@@ -24,68 +24,76 @@
   
         <h1>Checkout</h1>
         
-<p>Create an account</p>
+<p><b>Create an account and let us know where to deliver your order</b></p>
 
 <form action="/action_page.php">
     <fieldset>
-     <legend><b>Fill in your details below:</b></legend>
+     <legend><b>Create an account:</b></legend>
      <label for="fname">First name:</label>
      <input type="text" id="fname" name="fname"><br><br>
      <label for="lname">Last name:</label>
      <input type="text" id="lname" name="lname"><br><br>
      <label for="email">Email:</label>
      <input type="email" id="email" name="email"><br><br>
-
-   
+    
+     <form action="/action_page.php">
+      <p>Gender:</p>
+      <input type="radio" id="Female" name="Gender" value="Female">
+      <label for="Female">Female</label><br>
+      <input type="radio" id="Male" name="Gender" value="Male">
+      <label for="Male">Male</label><br>
+      <input type="radio" id="Prefer not to say" name="Gender" value="Prefer not to say">
+      <label for="Prefer not to say">Prefer not to say</label>
+   <p></p>
    <form action="/action_page.php">
-     <label for="username">Create username:</label><br>
-       <input type="text" id="username" name="username" required><br>
-       <label for="pwd">Create password:</label><br>
-       <input type="password" id="pwd" name="pwd" required><br><br>
-       <label for="pwd">Confirm password:</label><br>
-       <input type="confirm password" id="pwd" name="pwd"required><br><br>
+      <b><label for="username">Create username and password:</label></b>
+     <p></p>
+
+       <label for="fname">User name:</label>
+     <input type="text" id="fname" name="fname"><br><br>
+     <label for="lname">Password:</label>
+     <input type="text" id="lname" name="lname"><br><br>
+     <label for="email">Confirm password:</label>
+     <input type="email" id="email" name="email"><br><br>
+
+    </fieldset>
+<p>
+  <p>
+
+  </p>
+</p>
+
+<form action="/action_page.php">
+
+  <form action="/action_page.php">
+    <fieldset>
+     <legend><b>Shipping Details</b></legend>
+     <label for="Stname">Full address:</label>
+     <input type="text" id="Stname" name="Stname" size="70"><br>
+     <p></p>
+     <label for="lname">Suburb:</label>
+     <input type="text" id="lname" name="lname"><br><br>
+     <label for="email">State:</label>
+     <input type="email" id="email" name="email"><br><br>
+     <label for="State">Postcode:</label>
+     <input type="text" id="State" name="State" pattern="[A-Za-z]{3}" title="Three letter state code"><br><br>
+   <p> **Delivery only available within Australia</p>
+     
+   <h3>Contact phone number</h3>
+
+     <form action="/action_page.php">
+       <label for="phone">Enter a phone number:</label><br><br>
+       <input type="tel" id="phone" name="phone" placeholder="xxxx xxx xxx" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" required><br><br>
+       <small>Format: xxxx xxx xxx</small><br><br>
 
     </fieldset>
 
-
-<form action="/action_page.php">
-
-
+    <p></p>
 </form>
         
-        <h2>Shipping Address:</h2>
-
-        <form>
-            <form action="/action_page.php">
-                <label for="Housenumber">House number:</label>
-                <input type="text" id="Housenumber" name="Housenumber" size="5">
-          <label for="Stname">Street name:</label>
-
-          <input type="text" id="Stname" name="Stname" size="50"><br> 
-          <label for="Stname">Suburb:</label>
-          <input type="text" id="fname" name="fname" size="50"><br>
-<form action="/action_page.php">
-  <label for="State">State:</label>
-    <input type="text" id="State" name="State" pattern="[A-Za-z]{3}" title="Three letter state code"><br><br>
-  </form>
-        </form>
-        
-
-        <p>Billing address same as shipping address:</p>
-        
-        <form>
-          <input type="radio" id="Yes" name="address_same" value="Yes">
-          <label for="yes">Yes</label><br>
-          <input type="radio" id="No" name="address_same" value="No">
-          <label for="No">No</label><br>
-        </form> 
-        
-        <h2>Contact phone number</h2>
-
-        <form action="/action_page.php">
-          <label for="phone">Enter a phone number:</label><br><br>
-          <input type="tel" id="phone" name="phone" placeholder="xxxx xxx xxx" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" required><br><br>
-          <small>Format: xxxx xxx xxx</small><br><br>
+  
+          
+       
 
         <form action="/action_page.php">
                         <input type="submit" value="Submit">

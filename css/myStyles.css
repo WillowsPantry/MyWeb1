@@ -72,3 +72,14 @@ td{
    border-width: 5px;
 
 }
+
+img:hover.item{
+
+   -webkit-transform: scale(2) ;
+   transform: scale(2);
+}
+
+div 
+{
+   word-wrap: break-word }
+
